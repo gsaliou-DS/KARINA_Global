@@ -125,7 +125,7 @@ class Block(nn.Module):
         return x
 
 class ConvNeXt(nn.Module):
-    def __init__(self, in_chans=67, num_classes=67, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], drop_path_rate=0.):
+    def __init__(self, in_chans=71, num_classes=67, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], drop_path_rate=0.):
         super().__init__()
 
         self.downsample_layers = nn.ModuleList() 
@@ -207,7 +207,7 @@ class LayerNorm(nn.Module):
             return x
 
 class KARINA(nn.Module):
-    def __init__(self, img_size=(72, 144), in_chans=67, out_chans=67, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], drop_path_rate=0.):
+    def __init__(self, img_size=(72, 144), in_chans=71, out_chans=66, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], drop_path_rate=0.):
         super().__init__()
         self.in_chans = in_chans
         self.out_chans = out_chans
